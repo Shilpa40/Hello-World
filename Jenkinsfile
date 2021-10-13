@@ -16,5 +16,15 @@ pipeline {
                bat "npm run build"
             }
         }
+        stage('Sonar Analysis')
+        {
+            steps
+            {
+                withSonarQubeEnv("SonarQube")
+                {
+                    bat "mvn sonar:sonar"
+                }  
+            }
+        }
     }
 }
