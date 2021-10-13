@@ -21,7 +21,7 @@ pipeline {
             steps
             {
                bat "npm install -g serve"
-               bat "serve -s build"
+               bat "npm serve -s build"
             }
         }
     }
