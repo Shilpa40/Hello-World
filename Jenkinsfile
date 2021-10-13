@@ -16,13 +16,5 @@ pipeline {
                bat "npm run build"
             }
         }
-         stage('Deployment')
-        {
-            steps
-            {
-               bat "npm install -g serve"
-               bat "npm serve -s build"
-            }
-        }
     }
 }
