@@ -12,7 +12,7 @@ pipeline {
         {
             steps
             {
-               bat "npm build"
+               bat "npm install"
                bat "npm run build"
             }
         }
